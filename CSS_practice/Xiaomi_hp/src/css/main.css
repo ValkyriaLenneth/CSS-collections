@@ -1,0 +1,175 @@
+.main {
+    margin-top: 30px;
+    background: #F5F5F5;
+}
+.main::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* title */
+.title {
+    height: 58px;
+    position: relative;
+}
+.title>h2 {
+    font-size: 22px;
+    font-weight: 200;
+    color: #333333;
+    line-height: 58px;
+}
+.operators {
+    position: absolute;
+    right: 0;
+    top: 24px;
+    font-size: 0;
+}
+.left-op {
+    width: 24px;
+    height: 16px;
+    line-height: 16px;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    padding: 3px 5px;
+}
+.right-op {
+    width: 24px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    display: inline-block;
+    border: 1px solid #e0e0e0;
+    padding: 3px 5px;
+    border-left: 0;
+}
+
+/* main body*/
+.main-body {
+    position: relative;
+}
+.main-body::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.main-timer,
+.main-item {
+    height: 300px;
+    width: 234px;
+    margin-right: 14px;
+}
+
+/*timer*/
+.main-timer {
+    float: left;
+    border-top: 1px solid red;
+    background-color: #F1EDED;
+}
+.h {
+    padding-top: 39px;
+    text-align: center;
+}
+.h p:first-child {
+    font-size: 21px;
+    color: #ef3a3b;
+}
+.h i {
+    font-size: 60px;
+    color: #ef3a3b;
+    display: block;
+    margin: 20px auto;
+}
+.h p:last-child {
+    font-size: 14px;
+    color: rgba(0,0,0,.54);
+}
+
+.time {
+    width: 180px;
+    margin: 28px auto 0;
+}
+.time::before {
+    content: "";
+    display: table;
+}
+.time::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.time span{
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    background-color: #605751;
+    float: left;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.time p{
+    display: block;
+    float: left;
+    vertical-align: center;
+    margin: auto 5px;
+    font-size: 30px;
+}
+
+/* list */
+.main-list {
+    float: left;
+    overflow: hidden;
+    width: 978px;
+    height: 300px;
+
+}
+.main-list ul {
+    width: 600%;
+    overflow: hidden;
+}
+.main-list ul::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.main-item {
+    float: left;
+    margin-right: 14px;
+    border-top: 1px solid red;
+    text-align: center;
+    line-height: 25px;
+    background-color: white;
+}
+.main-item:nth-child(4) {
+    margin: 0;
+}
+.main-item img {
+    padding-top: 39px;
+    width: 160px;
+}
+.main-item .name {
+    font-size: 14px;
+}
+.main-item .describe {
+    font-size: 10px;
+    color: rgba(0,0,0,.5);
+}
+.main-item .price {
+    font-size: 14px;
+    color: #ff6709;
+}
+.main-item .price s {
+    color: rgba(0,0,0,.5);
+    font-size: 12px;
+}
+
+/*main banner*/
+.main-banner {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}

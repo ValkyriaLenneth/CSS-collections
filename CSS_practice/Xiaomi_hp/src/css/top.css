@@ -1,0 +1,229 @@
+.header {
+    height: 140px;
+}
+
+.top {
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    background-color: #333;
+}
+/* top-nav */
+.top_classes {
+    float: left;
+}
+.top_classes ul li {
+    float: left;
+    padding: 0 5px;
+}
+
+.top_classes ul li.scaper {
+    width: 1px;
+    height: 12px;
+    background-color: rgb(60,60,60);
+    margin-top: 15px;
+    padding: 0;
+}
+
+/* qrcode */
+li.app {
+    position: relative;
+}
+
+.app:hover .qrcode{
+    z-index: 120;
+    height: 148px;
+    box-shadow: 0  3px 3px 3px rgba(0,0,0,0.3);
+}
+.qrcode {
+    width: 124px;
+    height: 0px;
+    line-height: 1;
+    position: absolute;
+    top: 40px;
+    left: -15px;
+    background-color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+
+    transition: height .5s;
+}
+.qrcode img {
+    width: 90px;
+    margin: 17px;
+    margin-bottom: 10px;
+}
+
+/* log tool bar */
+.top_log {
+    float: right;
+}
+
+.top_log ul li {
+    float: left;
+    padding: 0 8px;
+}
+
+.top_log ul li.scaper {
+    width: 1px;
+    height: 12px;
+    background-color: rgb(60,60,60);
+    margin-top: 15px;
+    padding: 0;
+}
+
+.top_car {
+    float: right;
+    width: 120px;
+    margin-left: 15px;
+    background-color: #424242;
+    position: relative;
+    text-align: center;
+    position: relative;
+}
+
+.top_car i {
+    font-size: 20px;
+    margin-right: 4px;
+    line-height: 20px;
+    vertical-align: -3px;
+}
+
+.top_car span {
+    text-align: center;
+}
+
+.top_car:hover div.car_list{
+    max-height: 400px;
+    transition: max-height 0.2s ease-in;
+}
+
+div.car_list {
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+
+    width: 316px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 31;
+    background-color: white;
+
+}
+
+.car_list span{
+    display: block;
+    height: 100px;
+    font-size: 12px;
+    color: #999999;
+    vertical-align: center;
+    border: 1px solid ;
+}
+/* head nav */
+.head_nav {
+    height: 100px;
+}
+
+.nav_logo {
+    width: 62px;
+    float: left;
+}
+
+
+.nav_logo a{
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin-top: 22px;
+    background-color: #ff6700;
+    position: relative;
+}
+
+.nav_logo a::before {
+    width: 55px;
+    height: 55px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/mi_logo.png") no-repeat 50% 50%;
+    opacity: 1;
+}
+
+.nav_logo a::after{
+    width: 55px;
+    height: 55px;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 55px;
+    background: url("../img/mi_home.png") no-repeat 50% 50%;
+}
+
+.logo_block span {
+}
+
+.nav_list {
+    float: left;
+    width: 850px;
+    padding-top: 12px;
+}
+
+.nav_list_wrapper {
+    margin-left: 172px;
+}
+
+.nav_list_wrapper li {
+    float: left;
+}
+
+.nav_item {
+    height: 88px;
+}
+
+.nav_item a{
+    display: block;
+    padding: 26px 10px 38px;
+    color: #333;
+}
+
+.nav_item a:hover {
+    color: #ff6700;
+}
+
+.nav_search {
+    width: 296px;
+    float: right;
+    margin-top: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.nav_search input {
+    height: 48px;
+    width: 223px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    position: absolute;
+    left: 0;
+    color: #e0e0e0;
+}
+
+.nav_search button.icon_wrapper{
+    height: 50px;
+    width: 52px;
+    position: absolute;
+    border: 1px solid #e0e0e0;
+    right: 0;
+    font-size: 24px;
+    line-height: 24px;
+    background: #fff;
+    color: #616161;
+}
+
+.icon_wrapper i {
+    font-size: 24px;
+
+}

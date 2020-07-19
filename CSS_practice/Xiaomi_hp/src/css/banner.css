@@ -1,0 +1,254 @@
+.banner .container {
+    position: relative;
+
+}
+.banner-category {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 234px;
+    height: 460px;
+    font-size: 14px;
+    z-index: 21;
+    background-color: rgba(105,101,101,.6);
+
+}
+
+.category {
+    padding: 8px 0;
+}
+
+.category li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    color: #ffffff;
+}
+
+.category-item {
+    padding-left: 30px;
+}
+
+.category li i {
+    padding-right: 30px;
+}
+
+.category li:hover {
+    background-color: #ff6700;
+
+}
+
+.category li:hover .category-list {
+    display: block;
+}
+
+.category-list {
+    display: none;
+    height: 460px;
+    width: 990px;
+    background-color: white;
+    box-shadow: 0  1px 1px 1px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 234px;
+}
+
+.goods-list {
+
+}
+.goods-list li {
+    display: block;
+    width: 265px;
+    height: 76px;
+    position: relative;
+    float: left;
+}
+
+.goods-list li a {
+    display: block;
+    line-height: 40px;
+    color: #333333;
+    transition: color .2s;
+    padding: 16px 20px;
+}
+
+.goods-list li a img {
+    float: left;
+}
+
+.goods-list li a .text{
+    float: left;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.slider-container {
+    width: 100%;
+    height: 460px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    width: 500%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    animation: loop 30s linear infinite;
+    z-index: 10;
+}
+
+@keyframes loop {
+    0% { transform: translate(0,0)}
+    15% { transform: translate(0,0)}
+
+    20% { transform: translate(-20%, 0)}
+    35% { transform: translate(-20%, 0)}
+
+    40% {transform: translate(-40%,0);}
+    55% {transform: translate(-40%,0);}
+
+    60% {transform: translate(-60%,0);}
+    75% {transform: translate(-60%,0);}
+
+    80% {transform: translate(-80%,0);}
+    95% {transform: translate(-80%,0);}
+
+    100% {transform: translate(0,0);}
+}
+
+.slide-item {
+    float: left;
+}
+
+.left-icon {
+    position: absolute;
+    left: 234px;
+    top: 210px;
+    width: 41px;
+    height: 69px;
+    z-index: 30;
+}
+
+.right-icon .iconfont,
+.left-icon .iconfont {
+    font-size: 40px;
+    color: rgba(256,256,256,0.5);
+}
+
+.right-icon {
+    position: absolute;
+    right: 0px;
+    top: 210px;
+    width: 41px;
+    height: 69px;
+    z-index: 35;
+}
+
+.paginator {
+    position: absolute;
+    left: 1110px;
+    top: 420px;
+    z-index: 30;
+}
+
+.paginator li {
+    width: 5px;
+    height: 5px;
+    background: rgba(0,0,0,.4);
+    border: 1px solid hsla(0,0%,100%,.4);
+    border-radius: 15px;
+    margin-left: 5px;
+    float: left;
+}
+
+.paginator li:hover {
+    background: hsla(0,0%,100%,.4);
+    border: 1px solid rgba(0,0,0,.4);
+}
+
+.sub-container {
+    margin-top: 15px;
+    height: 170px;
+}
+
+.home-category {
+    float: left;
+    width: 234px;
+    height: 170px;
+    background-color: #5f5750;
+}
+
+.home-category ul {
+    padding: 3px;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.home-category ul li {
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 82px;
+    padding: 0 3px;
+}
+
+.home-category ul li a {
+    display: block;
+    padding-top: 18px;
+    color: #ffffff;
+    opacity: .7;
+    transition: opacity .2s;
+}
+
+.home-category ul li::before {
+    top: -1px;
+    left: 6px;
+    width: 64px;
+    height: 1px;
+    position: absolute;
+    content: "";
+    background-color: #665e57;
+}
+.home-category ul li::after {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    content: "";
+    width: 1px;
+    height: 70px;
+    background-color: #665e57;
+}
+
+.home-category ul li a i {
+    font-size: 24px;
+    display: block;
+}
+
+.home-banner {
+    float: left;
+    width: 978px;
+    margin-left: 14px;
+}
+
+.home-banner ul li {
+    float: left;
+    width: 316px;
+    height: 170px;
+    margin-left: 15px;
+}
+
+
+.subbanner-item img {
+    width: 316px;
+    height: 170px;
+}
+
+.home-banner ul li.first {
+    margin-left: 0;
+}

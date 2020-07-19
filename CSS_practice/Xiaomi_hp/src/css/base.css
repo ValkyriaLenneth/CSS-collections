@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* container: define the width of the content */
+.container {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* iconfont */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../icon/font_1932192_u7w892xh0q/iconfont.eot');
+    src: url('../icon/font_1932192_u7w892xh0q/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../icon/font_1932192_u7w892xh0q/iconfont.woff2') format('woff2'),
+    url('../icon/font_1932192_u7w892xh0q/iconfont.woff') format('woff'),
+    url('../icon/font_1932192_u7w892xh0q/iconfont.ttf') format('truetype'),
+    url('../icon/font_1932192_u7w892xh0q/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

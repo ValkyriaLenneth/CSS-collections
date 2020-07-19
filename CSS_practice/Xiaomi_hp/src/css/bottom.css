@@ -1,0 +1,129 @@
+.bottom {
+    background-color: #ffffff;
+}
+.bottom row {
+
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* server-list*/
+.server-list {
+    height: 80px;
+    border-bottom: 1px solid #cccccc;
+}
+.server-list ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.server-item {
+    width: 242px;
+    height: 25px;
+    float: left;
+    text-align: center;
+    margin-top: 28px;
+    color: rgba(0,0,0,.7);
+}
+.server-item p {
+    display: inline;
+}
+.server-item i {
+    font-size: 24px;
+}
+.server-list ul li.space {
+    padding: 12px 1px;
+    background-color: #cccccc;
+    float: left;
+    margin-top: 28px;
+}
+
+/* map */
+.map {
+    padding: 40px 0;
+}
+
+.map dl.col {
+    float: left;
+    width: 160px;
+    height: 112px;
+    margin: 0;
+}
+
+.col dt {
+    font-size: 14px;
+    color: #424242;
+    line-height: 1.25;
+    margin: -1px 0 26px;
+}
+
+.col dd {
+    margin: 10px 0 0 ;
+    font-size: 12px;
+    color: #333333;
+}
+
+.access {
+    float: right;
+    width: 251px;
+    border-left: 1px solid #cccccc;
+    text-align: center;
+}
+.access p:first-child {
+    color: #ff6700;
+    font-size: 22px;
+    line-height: 1;
+}
+.access p:nth-child(2) {
+    color: rgba(0,0,0,.6);
+    font-size: 12px;
+    margin: 3px 0 5px 0;
+}
+.access button {
+    color: #ff6700;
+    background-color: #ffffff;
+    border: 1px solid #ff6700;
+    width: 118px;
+    height: 28px;
+    vertical-align: center;
+    border-radius: 2px;
+}
+.access button:hover {
+    color: white;
+    background-color: #ff6700;
+    border-color: #f25807;
+    transition: all 0.8s;
+}
+.access p:last-child{
+    font-size: 12px;
+    color: rgba(0,0,0,0.6);
+}
+.access p:last-child i {
+    font-size: 20px;
+}
+
+/* sites link */
+.server-lin {
+    margin: 15px 0;
+}
+.server-lin p {
+    font-size: 14px;
+}
+.server-lin p span {
+    display: inline-block;
+    padding: 0 3px ;
+}
+
+.copyright {
+    font-size: 13px;
+}
+.copyright p {
+    margin: 5px 0;
+}
+.icons {
+    margin: 15px 0;
+}
