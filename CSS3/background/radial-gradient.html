@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid #cccccc;
+            margin: 10px auto;
+        }
+        .circle {
+            /* default:
+                    from center to border in circle
+            */
+            background-image: radial-gradient(orange, green);
+        }
+        .ellipse {
+            background-image: radial-gradient(ellipse at center,orange, green);
+        }
+        .left {
+            background-image: radial-gradient(ellipse at left, orange, green);
+        }
+        .right {
+            background-image: radial-gradient(circle at right, orange, green);
+        }
+        .top_left {
+            background-image: radial-gradient(circle at top left, orange, green);
+        }
+        .coordinate {
+            background-image: radial-gradient(20px circle at center, orange, green);
+        }
+        .coordinate_ellipse {
+            background-image: radial-gradient(20px 50px ellipse at center, orange, green);
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="ellipse"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="top_left"></div>
+    <div class="coordinate"></div>
+    <div class="coordinate_ellipse"></div>
+</body>
+</html>
