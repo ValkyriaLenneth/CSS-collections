@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*
+        transition
+            - property:
+            - duration:
+            - timing-function:
+                - ease
+                - linear
+                - ease-in
+                - ease-in-out
+                - step-start/end
+                - bezier (cubic-bezier)
+            - delay:
+         */
+        .layer {
+            width: 100px;
+            height: 100px;
+            background-color: deeppink;
+
+        }
+        .layer:hover {
+            width: 300px;
+            cursor: pointer;
+            transition-duration: 2s;
+            transition-property: width;
+            transition-delay: .1s;
+            transition-timing-function: ease;
+            /*transition: all 2s .2s ease;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="layer"></div>
+</body>
+</html>

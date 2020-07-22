@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Microsoft YaHei UI";
+        }
+        .main {
+            margin: 10px auto;
+            width: 260px;
+            border: 1px solid #cccccc;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .main li {
+            list-style: none;
+            cursor: pointer;
+        }
+        .m_title {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 5px;
+        }
+        .m_content {
+            color: rgba(0,0,0,.6);
+            margin-bottom: 15px;
+        }
+        .imgWrapper {
+            position: relative;
+        }
+        .imgWrapper::before{
+            content: "";
+            position: absolute;
+            width: 170px;
+            height: 160px;
+            background-color: #eee;
+            border-radius: 50%;
+            z-index: -1;
+            top: -30px;
+            left: 45px;
+        }
+        .imgWrapper img {
+            width: 60%;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s; ;
+        }
+        .main li:hover .imgWrapper img {
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li>
+                <div class="m_title">Miku</div>
+                <div class="m_content">This is description</div>
+                <div class="imgWrapper">
+                    <img src="../../image/test1.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

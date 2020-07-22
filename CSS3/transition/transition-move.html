@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #cccccc;
+            margin: 10px auto;
+            font-family: "Microsoft YaHei UI";
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        .main li {
+            list-style: none;
+        }
+        .m_title {
+            font-size: 18px;
+            font-weight: 400;
+            padding: 20px 10px 10px 10px;
+        }
+        .m_content {
+            color: #11ccaa;
+            padding: 0 10px 10px 10px;
+        }
+        .img_wrapper {
+            text-align: right;
+            position: relative;
+
+        }
+        .img_wrapper img{
+            width: 60%;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            /* add to the property you want */
+            -webkit-transition: right .3s;
+            -moz-transition: right .3s;
+            -ms-transition: right .3s;
+            -o-transition: right .3s;
+            transition: right .3s;
+        }
+        .main:hover .img_wrapper img {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li>
+                <div class="m_title">Miku</div>
+                <div class="m_content">This is description</div>
+                <div class="img_wrapper">
+                    <img src="../../image/test1.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
